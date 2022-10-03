@@ -1,0 +1,23 @@
+{
+  "name": "cypress_course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcabai/cypress_course.git"
+  },
+  "keywords": [
+    "cypress",
+    "testing"
+  ],
+  "author": "Lucija Cabai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lcabai/cypress_course/issues"
+  },
+  "homepage": "https://github.com/lcabai/cypress_course#readme"
+}
