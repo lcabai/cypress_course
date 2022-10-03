@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/lcabai/cypress_course/issues"
   },
-  "homepage": "https://github.com/lcabai/cypress_course#readme"
+  "homepage": "https://github.com/lcabai/cypress_course#readme",
+  "dependencies": {
+    "cypress": "^10.9.0"
+  }
 }
