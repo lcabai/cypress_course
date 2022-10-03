@@ -1,5 +1,5 @@
 describe('Browser Actions', () => {
     it('should load correct url', () => {
-        cy.visit("http://example.com/")
+        cy.visit("http://google.com/")
     })
 })
