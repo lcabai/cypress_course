@@ -22,4 +22,8 @@ describe('Browser Actions', () => {
     it("check if h1 is visible", () => {
         cy.get("h1").should("be.visible")
     })
+
+    it("h1 is correct", () => {
+        cy.get('h1').contains('Example')
+    })
 })
