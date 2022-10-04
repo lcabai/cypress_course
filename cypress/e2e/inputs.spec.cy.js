@@ -5,7 +5,8 @@ describe('Working with inputs', () => {
     })
 
     it("input username", () => {
-        cy.get("#user_login").clear().type("something", { delay: 50 })
+        cy.get("#user_login").as("username") //alias
+        cy.get("@username").clear().type("something", { delay: 50 })
     })
 
     it("input password", () => {
