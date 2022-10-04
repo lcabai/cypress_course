@@ -10,6 +10,7 @@ describe('Working with inputs', () => {
         cy.get("h3").contains("Log in to ZeroBank")
         cy.clearCookies({ log: true })
         cy.clearLocalStorage("your item", { log: true })
+        cy.title().should("contain", "Zero - Log in")
     })
 
     it("input username", () => {
