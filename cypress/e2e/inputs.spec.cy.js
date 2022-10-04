@@ -1,4 +1,10 @@
 describe('Working with inputs', () => {
+    it("should override current time", () => {
+        const date = new Date(2020, 3, 10).getTime() // returns timesamp
+        cy.clock(date)
+        cy.log(date)
+    })
+
     it("load and check page", () => {
         cy.visit("http://zero.webappsecurity.com/login.html")
         cy.get("h3").contains("Log in to ZeroBank")
