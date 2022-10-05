@@ -27,6 +27,8 @@
 Cypress.Commands.add("login", (username, password) => {
     cy.clearCookies({ log: true })
     cy.clearLocalStorage({ log: true })
-    cy.get("#user_login").clear().type("something", { delay: 50 })
-    cy.get("#user_password").clear().type("something {enter}", { delay: 50 })
+    cy.get("#user_remember_me").click()
+    cy.get("#user_login").clear().type(username, { delay: 50 })
+    cy.get("#user_password").clear().type(password, { delay: 50 })
+    cy.get(".btn-primary").click()
 })
