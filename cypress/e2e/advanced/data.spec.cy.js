@@ -10,6 +10,6 @@ describe('write/read data to JSON', () => {
         cy.visit("www.example.com")
         cy.wait(2000)
         cy.document().its("contentType").should("eq", "text/html")
-        cy.document().should("have.property", "charset").and("eq", "UTF-8")
+        cy.document().should("have.property", "charset").and("eq", "UTF-8 ")
     })
 })
