@@ -10,6 +10,8 @@
 
 // ***********************************************
 Cypress.Commands.add("login", () => {
+    cy.clearCookies({ log: true })
+    cy.clearLocalStorage({ log: true })
     cy.fixture("user.json").then((user) => {
         cy.get("#user_login").clear().type(user.username)
         cy.get("#user_password").clear().type(user.password)
