@@ -9,7 +9,7 @@ describe('send forgotten password mail', () => {
         cy.get(".offset3 > a").click()
     })
     it("type mail and send", () => {
-        cy.get("#user_email").type("test@test.com")
+        cy.get("#user_email").type("test@test.com", { delay: 50 })
         cy.get("input[name='submit']").click()
     })
 })
