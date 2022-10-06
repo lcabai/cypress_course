@@ -6,6 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     video: false,
+    baseUrl: "http://zero.webappsecurity.com",
     // viewportHeight: 1080,
     // viewportWidth: 1980,
     watchForFileChanges: false

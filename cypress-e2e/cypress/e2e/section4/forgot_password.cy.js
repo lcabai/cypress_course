@@ -1,6 +1,6 @@
 describe('send forgotten password mail', () => {
     before(function () {
-        cy.visit("http://zero.webappsecurity.com/index.html")
+        cy.visit("")
     })
     it("go to sign in page", () => {
         cy.get("#signin_button").click()
