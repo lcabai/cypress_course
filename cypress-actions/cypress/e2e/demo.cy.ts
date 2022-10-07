@@ -1,6 +1,5 @@
-describe('empty spec', () => {
+describe('login to app', () => {
   it('passes', () => {
-    // cy.visit('https://example.com')
-    cy.visitHomepage()
+    cy.login("username", "password")
   })
 })
