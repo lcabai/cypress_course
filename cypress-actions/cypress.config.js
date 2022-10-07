@@ -10,7 +10,7 @@ module.exports = defineConfig({
     viewportHeight: 1080,
     viewportWidth: 1980,
     watchForFileChanges: false,
-    supportFile: false,
+    supportFile: "./cypress/support/index.ts",
     reporter: "cypress-mochawesome-reporter"
   },
 });

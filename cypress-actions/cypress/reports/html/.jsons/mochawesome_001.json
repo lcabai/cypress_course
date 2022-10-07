@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2022-10-07T13:07:08.145Z",
-    "end": "2022-10-07T13:07:08.304Z",
-    "duration": 159,
+    "failures": 0,
+    "start": "2022-10-07T13:07:33.035Z",
+    "end": "2022-10-07T13:07:34.914Z",
+    "duration": 1879,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "98ced537-b5bd-4a66-8b84-c1bb6ff0b13f",
+      "uuid": "89779cbb-2483-475f-b025-5434d84a98ba",
       "title": "",
       "fullFile": "cypress/e2e/spec.cy.ts",
       "file": "cypress/e2e/spec.cy.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9501bec6-8ffd-4929-8bf4-9b50cdb170f5",
+          "uuid": "ef2e7852-d49d-4de8-b64b-1a63b9b670af",
           "title": "empty spec",
           "fullFile": "",
           "file": "",
@@ -38,33 +38,29 @@
               "title": "passes",
               "fullTitle": "empty spec passes",
               "timedOut": null,
-              "duration": 106,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 194,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('https://example.com');\ncy.visitHomepage();",
-              "err": {
-                "message": "TypeError: cy.visitHomepage is not a function",
-                "estack": "TypeError: cy.visitHomepage is not a function\n    at Context.eval (webpack:///./cypress/e2e/spec.cy.ts:4:7)",
-                "diff": null
-              },
-              "uuid": "899adb38-f571-4c8f-b5aa-c97919781f14",
-              "parentUUID": "9501bec6-8ffd-4929-8bf4-9b50cdb170f5",
+              "code": "cy.visit('https://example.com');\n// cy.visitHomepage()",
+              "err": {},
+              "uuid": "438effc9-a85b-442d-bdb9-fa5344c5ca2e",
+              "parentUUID": "ef2e7852-d49d-4de8-b64b-1a63b9b670af",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "899adb38-f571-4c8f-b5aa-c97919781f14"
+          "passes": [
+            "438effc9-a85b-442d-bdb9-fa5344c5ca2e"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 106,
+          "duration": 194,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

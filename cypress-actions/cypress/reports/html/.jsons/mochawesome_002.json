@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2022-10-07T13:07:08.145Z",
-    "end": "2022-10-07T13:07:08.304Z",
-    "duration": 159,
+    "start": "2022-10-07T13:07:49.713Z",
+    "end": "2022-10-07T13:07:49.868Z",
+    "duration": 155,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "98ced537-b5bd-4a66-8b84-c1bb6ff0b13f",
+      "uuid": "ea9f411d-221f-4eb2-aabd-a9623646ceab",
       "title": "",
       "fullFile": "cypress/e2e/spec.cy.ts",
       "file": "cypress/e2e/spec.cy.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9501bec6-8ffd-4929-8bf4-9b50cdb170f5",
+          "uuid": "a848e83b-5476-40c7-9e45-3305eff7baa3",
           "title": "empty spec",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,21 @@
               "title": "passes",
               "fullTitle": "empty spec passes",
               "timedOut": null,
-              "duration": 106,
+              "duration": 108,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.visit('https://example.com');\ncy.visitHomepage();",
+              "code": "// cy.visit('https://example.com')\ncy.visitHomepage();",
               "err": {
                 "message": "TypeError: cy.visitHomepage is not a function",
                 "estack": "TypeError: cy.visitHomepage is not a function\n    at Context.eval (webpack:///./cypress/e2e/spec.cy.ts:4:7)",
                 "diff": null
               },
-              "uuid": "899adb38-f571-4c8f-b5aa-c97919781f14",
-              "parentUUID": "9501bec6-8ffd-4929-8bf4-9b50cdb170f5",
+              "uuid": "4b11a973-075b-4779-8d53-6c11ca555b27",
+              "parentUUID": "a848e83b-5476-40c7-9e45-3305eff7baa3",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "899adb38-f571-4c8f-b5aa-c97919781f14"
+            "4b11a973-075b-4779-8d53-6c11ca555b27"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 106,
+          "duration": 108,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
