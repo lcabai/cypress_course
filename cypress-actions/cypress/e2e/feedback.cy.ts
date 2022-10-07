@@ -1,5 +1,7 @@
 describe('Feedback', () => {
     it("should submit feedback", () => {
-        cy.submitFeedback("name", "email", "subject", "message")
+        cy.fixture("feedbackData").then((feedbackData) => {
+            cy.submitFeedback(feedbackData.name, feedbackData.email, feedbackData.subject, feedbackData.message)
+        })
     })
 })
