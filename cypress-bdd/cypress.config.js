@@ -5,5 +5,13 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    video: false,
+    baseUrl: "http://zero.webappsecurity.com",
+    viewportHeight: 1080,
+    viewportWidth: 1980,
+    watchForFileChanges: false,
+    defaultCommandTimeout: 5000,
+    pageLoadTimeout: 10000,
+    excludeSpecPattern: ["*.js", "*.md"]
   },
 });
