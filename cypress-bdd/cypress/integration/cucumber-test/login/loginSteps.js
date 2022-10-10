@@ -20,3 +20,7 @@ When("I click on submit login", () => {
 Then("I should see homepage", () => {
     cy.url().should("contain", "/account-summary.html")
 })
+
+Then("I should see an error message", () => {
+    LoginPage.error()
+})

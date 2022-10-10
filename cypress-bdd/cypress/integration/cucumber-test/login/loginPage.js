@@ -3,6 +3,7 @@ const URL = "http://zero.webappsecurity.com/login.html"
 const USERNAME = "#user_login"
 const PASSWORD = "#user_password"
 const SUBMIT_BUTTON = ".btn-primary"
+const ERR_MESSAGE = ".alert-error"
 
 class LoginPage {
     static visit() {
@@ -16,6 +17,9 @@ class LoginPage {
     }
     static submitLogin() {
         cy.get(SUBMIT_BUTTON).click()
+    }
+    static error() {
+        cy.get(ERR_MESSAGE).should("be.visible")
     }
 }
 
