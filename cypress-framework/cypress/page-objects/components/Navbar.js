@@ -16,6 +16,10 @@ export default class Navbar {
     }
 
     static logout() {
-        cy.contains("username").click().get("#logout_link").click
+        cy.contains("username").click().get("#logout_link").click()
+    }
+
+    static displaySignInButton() {
+        cy.isVisible("#signin_button")
     }
 }

@@ -31,5 +31,9 @@ describe('Login success', () => {
   it("try to login with valid info", () => {
     LoginPage.login(login_username, login_password)
   })
+  it("should logout", () => {
+    Navbar.logout()
+    Navbar.displaySignInButton()
+  })
 
 })
