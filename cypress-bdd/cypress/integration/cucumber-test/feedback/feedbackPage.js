@@ -3,6 +3,7 @@ const NAME = "#name"
 const EMAIL = "#email"
 const SUBJECT = "#subject"
 const MESSAGE = "#comment"
+const SUBMIT_BUTTON = ".btn-primary"
 
 class FeedbackPage {
     static visit() {
@@ -13,6 +14,9 @@ class FeedbackPage {
         cy.get(EMAIL).type(email)
         cy.get(SUBJECT).type(subject)
         cy.get(MESSAGE).type(message)
+    }
+    static submit() {
+        cy.get(SUBMIT_BUTTON).click()
     }
 }
 
