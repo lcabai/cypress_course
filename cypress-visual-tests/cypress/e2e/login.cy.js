@@ -1,5 +1,5 @@
 describe("Visual Regression - Login Page", () => {
-    before(function () {
+    before(() => {
         cy.visit("http://zero.webappsecurity.com/index.html")
         cy.get("#signin_button").click()
         cy.get("#user_login").type("test")
