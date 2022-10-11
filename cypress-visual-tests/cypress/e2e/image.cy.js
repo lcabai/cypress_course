@@ -16,9 +16,9 @@ describe('Visual Regression', () => {
   })
 })
 
-describe('Single Element Snapshot', () => {
-  it('should match single element on the page', () => {
-    cy.visit('http://www.example.com')
+describe("Single Element Snapshot", () => {
+  it("should match single element on the page", () => {
+    cy.visit("www.example.com")
     cy.get('h1').matchImageSnapshot({
       failureTreshold: 10.0,
       failureTresholdType: 'pixels',
