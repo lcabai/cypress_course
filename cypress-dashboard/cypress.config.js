@@ -13,7 +13,7 @@ module.exports = defineConfig({
     waitForAnimation: true,
     defaultCommandTimeout: 5000,
     pageLoadTimeout: 10000,
-    video: false,
+    video: true,
     failOnStatusCode: false
   },
 });
