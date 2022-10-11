@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:run-dashboard": "npx cypress run --record --key 7dc0d30d-c82c-4987-97d5-104fa93c3474"
   },
   "keywords": [],
   "author": "",
