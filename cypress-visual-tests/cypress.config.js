@@ -1,10 +1,12 @@
 const { defineConfig } = require("cypress");
 const { addMatchImageSnapshotPlugin } = require("cypress-image-snapshot/plugin")
+const { percyHealthCheck } = require("@percy/cypress/task")
 
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       addMatchImageSnapshotPlugin(on, config)
+      on("task", percyHealthCheck)
     },
     watchForFilesChanges: false,
     chromeWebSecurity: false,
