@@ -6,6 +6,8 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "cy:run-chrome": "cypress run --browser chrome",
+    "cy:run-electron": "cypress run --browser electron",
     "cy:run-dashboard": "npx cypress run --record --key 7dc0d30d-c82c-4987-97d5-104fa93c3474"
   },
   "keywords": [],
