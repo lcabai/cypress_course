@@ -1,5 +1,5 @@
 # base image: node version
-FROM cypress/base:12.22.9
+FROM cypress/base:12.1.0
 # create new folder
 RUN mkdir /app
 # set that folder as working directory
