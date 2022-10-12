@@ -12,3 +12,6 @@ RUN npm install
 RUN $(npm bin)/cypress verify
 # run all tests in new container
 RUN ("npm", "run", "cy:run")
+
+#  docker run -it -v $PWD:/integration -w /integration cypress/included:10.10.0
+#  cypress/included: cypress version
